@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Objects</title>
+</head>
+<body>
+	<h1>JavaScript Objects</h1>
+	<button onclick="getName()">Nombre</button>
+	<button onclick="getLName()">Apellido</button>
+	<button onclick="getAge()">Edad</button>
+	<button onclick="getId()">Matrícula</button>
+
+	<p id="name"></p>
+	<p id="lName"></p>
+	<p id="age"></p>
+	<p id="id"></p>
+
+	<script>
+		std = { "name":"Isaac", "lName":"Miranda", "age":20, "id":"7820"};
+
+		function getName(){
+			document.getElementById("name").innerHTML = std.name;
+		}
+
+		function getLName(){
+			document.getElementById("lName").innerHTML = std.lName;
+		}
+
+		function getAge(){
+			document.getElementById("age").innerHTML = std.age;
+		}
+
+		function getId(){
+			document.getElementById("id").innerHTML = std.id;
+		}
+	</script>
+
+</body>
+</html>
